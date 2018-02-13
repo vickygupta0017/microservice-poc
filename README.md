@@ -8,6 +8,9 @@ There are three projects here.
 3.microservice-consumer : Used as a web part which will consume the services provided by producer, we are using spring-mvc for that.
 
 Further Planning : 
+
 zuul : routing 
+
 histrix : fall back methods.
+
 ribbon : load balancer.
