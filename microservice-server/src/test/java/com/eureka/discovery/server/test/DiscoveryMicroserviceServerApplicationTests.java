@@ -1,4 +1,4 @@
-package com.doj.discovery;
+package com.eureka.discovery.server.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

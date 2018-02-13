@@ -1,4 +1,4 @@
-package com.doj.ms.accounts;
+package com.eureka.discovery.client2.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
