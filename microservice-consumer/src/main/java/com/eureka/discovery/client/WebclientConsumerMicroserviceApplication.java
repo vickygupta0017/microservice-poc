@@ -15,7 +15,7 @@ import com.eureka.discovery.client.service.Impl.EmployeeServiceImpl;
 @EnableDiscoveryClient
 public class WebclientConsumerMicroserviceApplication {
 	
-	public static final String EMPLOYEE_SERVICE_URL = "http://EMPLOYEE-MICROSERVICE";
+	public static final String EMPLOYEE_SERVICE_URL = "http://localhost:8090/";
 	
 	public static void main(String[] args) {
 		SpringApplication.run(WebclientConsumerMicroserviceApplication.class, args);

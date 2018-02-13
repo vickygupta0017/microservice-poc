@@ -1,0 +1,11 @@
+zuul:
+  routes:
+      employee-microservice:
+           url: http://localhost:8086
+
+ribbon:
+   eureka:
+        enabled: false
+
+server:
+    port: 8090
