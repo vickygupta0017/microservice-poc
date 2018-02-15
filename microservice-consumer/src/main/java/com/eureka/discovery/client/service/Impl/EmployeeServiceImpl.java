@@ -26,13 +26,13 @@ public class EmployeeServiceImpl implements EmployeeService{
 	
 	@Override
 	public List<Employee> getEmployeeList() {
-		Employee[] employeeList =  restTemplate.getForObject(url+"/employees", Employee[].class);
+		Employee[] employeeList =  restTemplate.getForObject(url+"emp-api", Employee[].class);
 		return Arrays.asList(employeeList);
 	}
 
 	@Override
 	public Employee findEmployeeById(Integer id) {
-		return restTemplate.getForObject(url+"/employees/{id}", Employee.class, id);
+		return restTemplate.getForObject(url+"emp-api/{id}", Employee.class, id);
 	}
 
 }

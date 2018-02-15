@@ -1,7 +1,12 @@
+spring:
+  application:
+    name: zuul-gateway
+
 zuul:
   routes:
       employee-microservice:
-           url: http://localhost:8086
+           path: /emp-api/**
+           url: http://localhost:8086/employees
 
 ribbon:
    eureka:
