@@ -13,4 +13,4 @@ zuul : routing
 
 histrix : fall back methods.
 
-ribbon : load balancer..
+ribbon : load balancer...
