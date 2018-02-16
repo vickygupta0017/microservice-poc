@@ -10,7 +10,6 @@ import com.zuul.filters.SimpleFilter;
 
 @EnableZuulProxy
 @SpringBootApplication
-@EnableDiscoveryClient
 public class ZuulGatewayproxyApplication {
 
 	public static void main(String[] args) {
