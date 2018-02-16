@@ -12,7 +12,6 @@ import com.eureka.discovery.client.service.EmployeeService;
 import com.eureka.discovery.client.service.Impl.EmployeeServiceImpl;
 
 @SpringBootApplication
-@EnableDiscoveryClient
 public class WebclientConsumerMicroserviceApplication {
 	
 	public static final String EMPLOYEE_SERVICE_URL = "http://localhost:8090/";

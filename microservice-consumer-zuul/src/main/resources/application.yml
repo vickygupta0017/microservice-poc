@@ -12,11 +12,6 @@ spring:
 server: 
   port: 8087
 
-# Discovery Server Access
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8080/eureka/
 
 # Disable Spring Boot's "Whitelabel" default error page, so we can use our own
 error:
