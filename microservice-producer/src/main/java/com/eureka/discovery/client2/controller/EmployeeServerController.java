@@ -42,4 +42,9 @@ public class EmployeeServerController {
 		Employee employee = service.getEmployeeById(id);
 		return employee;
 	}
+	
+	@RequestMapping(value = "/")
+	public String status() {
+	    return "";
+	}
 }
