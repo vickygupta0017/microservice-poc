@@ -14,12 +14,11 @@ import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
 
-import com.ribbon.Employee.configuration.EmployeeConfiguration;
 
 
 @SpringBootApplication
 @RestController
-@RibbonClient(name = "employee-microservice", configuration = EmployeeConfiguration.class)
+@RibbonClient(name = "employee-microservice")
 public class RibbonClientApplication {
 
 	 @LoadBalanced
@@ -32,7 +31,7 @@ public class RibbonClientApplication {
 	  RestTemplate restTemplate;
 
 	  @RequestMapping("/listEmployee")
-	  public List hi(@RequestParam(value="name", defaultValue="Artaban") String name) {
+	  public List getEmployeeList() {
 	    List empList = this.restTemplate.getForObject("http://employee-microservice/employees", ArrayList.class);
 	    return empList;
 	  }

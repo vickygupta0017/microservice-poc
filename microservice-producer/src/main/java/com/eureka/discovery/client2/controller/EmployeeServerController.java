@@ -43,8 +43,5 @@ public class EmployeeServerController {
 		return employee;
 	}
 	
-	@RequestMapping(value = "/")
-	public String status() {
-	    return "";
-	}
+	
 }
